@@ -26,9 +26,15 @@
     <ClCompile Include="iofunc.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="algofunc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="iofunc.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="algofunc.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>

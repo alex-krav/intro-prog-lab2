@@ -145,6 +145,7 @@
     <None Include=".gitignore" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="algofunc.cpp" />
     <ClCompile Include="iofunc.cpp" />
     <ClCompile Include="main.cpp">
       <SubType>
@@ -152,6 +153,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="algofunc.h" />
     <ClInclude Include="iofunc.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

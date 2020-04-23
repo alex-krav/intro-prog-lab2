@@ -1,5 +1,6 @@
 #include <iostream>
 #include "iofunc.h"
+#include "algofunc.h"
 
 using namespace std;
 
