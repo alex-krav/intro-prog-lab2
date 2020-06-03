@@ -8,6 +8,6 @@
 using namespace std;
 typedef pair<string, int> kvPair;
 
-vector<kvPair> get_topN_grades(map<string, vector<int>>);
+vector<kvPair> get_topN_grades(map<string, vector<int>>, int, vector<int>);
 
 #endif

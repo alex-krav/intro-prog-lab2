@@ -4,10 +4,8 @@
 
 using namespace std;
 
-int TOP_N = 10;
-vector<int> GRADES = { 12,10,8,7,6,5,4,3,2,1 };
-
-vector<kvPair> get_topN_grades(map<string, vector<int>> country_votes) {
+vector<kvPair> get_topN_grades(map<string, vector<int>> country_votes, int topNum, vector<int> grades) 
+{
 	map<string, int> country_grades, one_country_votes;
 
 	// init grades
@@ -31,13 +29,13 @@ vector<kvPair> get_topN_grades(map<string, vector<int>> country_votes) {
 				return l.second > r.second;
 			});
 
-		// add grades to TOP_N countries
-		for (int j = 0; j < TOP_N; ++j) {
-			country_grades[vec[j].first] += GRADES[j];
+		// add grades to countries
+		for (int j = 0; j < grades.size(); ++j) {
+			country_grades[vec[j].first] += grades[j];
 		}
 	}
 
-	// sort countries by grades and return TOP_N
+	// sort countries by grades and return topNum
 	vector<kvPair> vec;
 	copy(country_grades.begin(),
 		country_grades.end(),
@@ -48,6 +46,7 @@ vector<kvPair> get_topN_grades(map<string, vector<int>> country_votes) {
 				return l.second > r.second;
 			return l.first < r.first;
 		});
-	vec.resize(TOP_N);
+	vec.resize(topNum);
+
 	return vec;
 }

@@ -142,9 +142,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <None Include=".gitignore" />
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="algofunc.cpp" />
     <ClCompile Include="iofunc.cpp" />
     <ClCompile Include="main.cpp">
